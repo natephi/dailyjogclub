@@ -2,7 +2,7 @@ body {
     font-family: "Yusei Magic", sans-serif;
     font-size: 16px;
     margin: 0;
-    background-color: lightsalmon;
+    background-color: white;
   }
   
   .bar {
@@ -15,16 +15,44 @@ body {
     align-content: center;
     background-color: black;
     flex: 1 1 auto;
+    font-size: 0.8rem;
+   
   }
   
   .bar p {
     left: 25rem;
   }
 
+  .header {
+      background-color:  teal;
+      display: flex;
+      padding: 0.5rem;
+      justify-content: center;
+      height: 4rem;
+      width: auto;
+      gap: 20px;
+      align-content: center;
+      align-items: center;
+      flex: 1 1 1rem;
+        }
+
+        .header img {
+            height: 3rem;
+            width: auto;
+        }
+
  
   .bar li img {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
+  }
+
+  .banner {
+      background-image: url("../images/kate-trifo-jf_YIwWKg8Q-unsplash.jpg");
+      height: 50rem;
+     background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
   }
 
 @media only screen and (max-width: 900px) {
@@ -35,14 +63,24 @@ body {
         justify-items: center;
         justify-self: center;
     }
+
+
+    .banner {
+       height: 30rem;
+       background-repeat: no-repeat;
+        background-size: cover;
+         }
 }
   
   .intro {
-    height: 30rem;
-    padding-top: 1rem;
-    background-image: url('https://content.codecademy.com/PRO/independent-practice-projects/responsive-meetup-page/img/runner-splash.jpg');
-    background-position: center;
-    background-repeat: none;
+    margin-left: auto;
+    margin-right: auto;
+           
+  }
+
+  .intro h2 {
+  text-align: center;
+       
   }
   
   .intro img {
@@ -81,11 +119,12 @@ body {
   }
   
   .summary {
-    padding: 0 1rem;
+      color: black;
+    text-align: center;
   }
   
   .summary p {
-    color: White;
+    color: black;
   }
   
   .testimonial {
@@ -102,7 +141,8 @@ body {
   }
   
   .summary h2 {
-    color: yellow;
+    color: black;
+
   }
   
   .photos img {
