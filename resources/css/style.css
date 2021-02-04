@@ -6,14 +6,36 @@ body {
   }
   
   .bar {
-    padding-top: 1rem;
+    padding: 0.5rem;
     background-color: teal;
     color: lightsalmon;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: black;
+    flex: 1 1 auto;
   }
   
   .bar p {
     left: 25rem;
   }
+
+ 
+  .bar li img {
+      width: 24px;
+      height: 24px;
+  }
+
+@media only screen and (max-width: 900px) {
+    .bar {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+}
   
   .intro {
     height: 30rem;
